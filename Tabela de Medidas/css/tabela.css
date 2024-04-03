@@ -236,15 +236,98 @@ div#lista
 
 
 /*Main*/
-
-
-/*Main*/
-
 main
 {
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
     height: 1000px;
+    align-items: center;
 }
+
+table, th, td, tr{
+    border: .1rem solid rgba(100, 100, 100, .7);
+    border-collapse: collapse;
+    text-align: center;
+    width: 50rem;
+    height: 4rem;
+    font-size: .9rem;
+}
+
+tr:nth-child(even)
+{
+    background-color: rgb(200, 200, 200);
+}
+
+
+th
+{
+    background-color: rgb(150, 150, 150);
+    color: rgb(60, 60, 60);
+}
+
+div#titulotabela
+{
+    margin-top: 5rem;
+}
+
+div#tabelaimagem
+{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+}
+
+
+img#medida
+{
+
+    width: 20rem;
+
+}
+
+div#imagemmedidas
+{
+    margin-left: 2rem;
+}
+
+
+
+@media(max-width:1340px)
+{
+    div#tabelaimagem
+    {
+        flex-direction: column;
+    }
+
+    div#imagemmedidas
+    {
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width:900px)
+{
+    table, th, td, tr{
+        width: 40rem;
+        height: 3rem;
+    }
+}
+
+
+@media(max-width: 710px)
+{
+    table, th, td, tr{
+        width: 30rem;
+        height: auto;
+        font-size: .8rem;
+    }
+}
+/*Main*/
+
 
 
 /*Footer*/
