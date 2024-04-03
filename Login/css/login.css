@@ -1,0 +1,568 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Header*/
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+    margin-top: 0px;
+    border-bottom:1px solid black;
+    box-shadow: 0px 0px 10px#2c2c2c;
+    padding-top: 1rem;
+    align-items: center;
+    padding-left: auto;
+    padding-right: auto;
+    height: 5.5rem;
+
+}
+
+h1#primeira
+{
+    margin-right: 6rem;
+}
+
+div#img
+{
+  display: flex;
+  flex-direction: row;
+}
+
+a#image
+{
+    align-self:flex-start;
+    margin-left: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover
+{
+    box-shadow: 0px 0px 2px gray;
+    transition: all 0.2s;
+    cursor:pointer;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+img#imagem
+{
+    height: 1.5rem;
+    width: auto;
+}
+
+div#home
+{
+    display: flex;
+    align-items: end;
+    font-weight: bold;
+    
+}
+
+ 
+@media(max-width:1513px)
+{
+    h1#primeira
+    {
+        margin-left: 10rem;
+    }
+}
+
+@media(max-width:570px)
+{
+    h1#primeira
+    {
+        margin-left: 7rem;
+    }
+}
+
+/*Header*/
+
+
+
+
+
+/*Main*/
+main
+{
+    display: flex;
+    background-color: white;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+
+div#login
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+    width: 30rem;
+    height: 30rem;
+    border: .1rem solid rgba(100, 100, 100, .5);
+    border-radius: .2rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    justify-content: start;
+    align-items: center;
+}
+
+.input
+{
+    width: 20rem;
+    height: 2rem;
+    border: .1rem solid rgba(100, 100, 100, .5);
+    border-radius: .2rem;
+}
+
+.but
+{
+    width: 10rem;
+    height: 2rem;
+    border: .1rem solid rgba(100, 100, 100, .5);
+    border-radius: .2rem;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.texto
+{
+    font-size: .8em;
+}
+
+a#textosenha
+{
+    text-decoration: none;
+    color: black;
+}
+
+a#textosenha:hover
+{
+    transition: all 0.2s;
+    cursor:pointer;
+    text-decoration:underline;
+}
+
+.label
+{
+    font-weight: bold;
+}
+
+.centralizarbotao
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.margemsuperior
+{
+    margin-top: 3rem;
+}
+
+@media(max-width:600px)
+{
+    div#login
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(250, 250, 250);
+        width: 20rem;
+    }
+
+    .input
+    {
+        width: 15rem;
+    }
+
+}
+
+/*Main*/
+
+
+
+
+/*Footer*/
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+    margin-top: 0px;
+}
+
+/*Primeira div do footer*/
+
+div#primeirodivfooter
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    align-items: center;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: #2c2c2c;
+    color: white;
+    height: 10rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div#footercadastrar
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    margin-left: 5rem;
+    margin-right: 12rem;
+    align-items: center;
+}
+
+
+
+div#sociais
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.imgsocial
+{
+    width: 3rem;
+    height: auto;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+input#cadastrar
+{
+    height: 2rem;
+    width: 20rem;
+}
+
+
+div#imagemsocial
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/*mediaquery da primeira div*/
+
+@media (max-width: 1180px)
+{
+    div#primeirodivfooter
+    {
+        height: 12rem;
+    }
+
+    div#footercadastrar
+    {
+       flex-direction: column; 
+    }
+
+    div#sociais
+    {
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 837px)
+{
+    div#primeirodivfooter
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 20rem;
+    }
+
+    div#footercadastrar
+    {
+       margin-left: auto;
+       margin-bottom: 1rem;
+       margin-right: auto;
+    }
+
+    div#sociais
+    {
+        margin-left: 9.5rem;
+    }
+
+
+}
+
+/*Segunda div do footer*/
+div#segundadivfooter
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+
+div#informacoes
+{
+    display: flex;
+    flex: row;
+    margin-top: 5rem;
+    font-size: .9rem;
+
+}
+
+div#detalhes
+{
+    width: 100%;
+}
+
+.palavrasinformacoes
+{
+    font-size: .7rem;
+    margin-top: 1rem;
+}
+
+
+div#institucional
+{
+    margin-left:10rem;
+}
+
+div#atendimento
+{
+    margin-left: 10rem;
+}
+
+div#pagamento
+{
+    margin-left: 10rem;
+    margin-right: auto;
+}
+
+div#politica
+{
+    margin-left: 10rem;
+}
+
+div#institucionalatendimento
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+div#colecaopagamento
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.ordempagamento
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgpagamento
+{
+    width: 2.3rem;
+    height: auto;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+div#institucionalatendimento
+{
+    display: flex;
+    flex-direction: row;
+}
+
+div#politicapagamento
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.botaoacrescimo
+{
+    width: 7rem;
+    height: 2.2rem;
+    border-radius: 10px;
+    border:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+@media(max-width: 1238px)
+{
+    
+    div#segundadivfooter
+    {
+        justify-content: center;
+    }
+    div#informacoes
+    {
+        flex-direction: column;
+        margin-left: 12rem;
+    }
+
+    div#pagamento
+    {
+        margin-left: 8rem;
+        margin-right: auto;
+    }
+
+    div#politicapagamento
+    {
+        margin-top: 4rem;
+    }
+
+
+}
+
+
+@media(max-width: 1140px)
+{
+    div#informacoes
+    {
+        flex-direction: column;
+        margin-left: 10rem;
+    }
+}
+
+
+@media(max-width: 990px)
+{
+    div#informacoes
+    {
+        margin-left: auto;
+    }
+
+    div#segundadivfooter
+    {
+        align-items: center;
+    }
+
+    div#institucionalatendimento
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        width: auto;
+        padding: auto;
+        justify-content: left;
+    }
+
+    div#politicapagamento
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        width: auto;
+        justify-content: left;
+    }
+
+    h1#segunda
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div#institucional
+    {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div#atendimento
+    {
+        margin-top: 2rem;
+        width: auto;
+        margin-left: 0rem;
+        margin-right: auto;
+        margin-bottom: auto;
+        align-items: center;
+        text-align: left;
+    }
+
+    
+    div#politica
+    {
+        width: auto;
+        margin-left: 1.6em;
+        margin-right: 0rem;
+        margin-bottom: auto;
+        align-items: center;
+        
+    }
+
+    div#pagamento
+    {
+        margin-top: 2rem;
+        width: auto;
+        margin-left: 1.6rem;
+        margin-right: auto;
+        margin-bottom: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .centralizartitulo
+    {
+        margin-right: 0.6rem;
+    }
+}
+
+/*Segunda div do footer*/
+
+
+
+
+/*Terceira div do footer*/
+div#terceiradivfooter
+{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(100, 100, 100);
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    font-weight: bold;
+    color: rgb(200, 200, 200);
+    width: auto;
+}
+
+/*Terceira div do footer*/
+
+/*Footer*/
