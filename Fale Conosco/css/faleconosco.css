@@ -236,15 +236,197 @@ div#lista
 
 
 /*Main*/
+main
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: auto;
+    margin-bottom: 2rem;
+}
 
+div#titulo
+{
+    align-self: center;
+    margin-top: 5rem;
+}
+
+div#duvidas
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-left: 5.4rem;
+    justify-content: center;
+    
+}
+
+div#tituloduvidas
+{
+    margin-left: 5.4rem;
+}
+
+div#duvidasgeral
+{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixasduvidas
+{
+    background-color: rgb(100, 100, 100);
+    color: rgb(230, 230, 230);
+    font-weight: bold;
+    font-size: .9rem;
+    border: .1em solid rgb(200, 200, 200);
+    display: flex;
+    flex-wrap: wrap;
+    width: 8rem;
+    height: 8rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+div#dados
+{
+    display: flex;
+    flex-direction: column;
+}
+
+div#doislados
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.caixas
+{
+    text-decoration: none;
+    margin-right: 5rem;
+    width: 8rem;
+    height: 8rem;
+}
+
+.caixas:hover
+{
+    transition-duration: .5s;
+    box-shadow: 0px 8px 5px rgb(150, 150, 150);
+}
+
+
+div#enviar
+{
+    margin-top: 7rem;
+    margin-left: 5.4rem;
+}
+
+.margemtop
+{
+    margin-top: 2rem;
+    font-size: .9rem;
+}
+
+.caixatexto
+{
+    border: 1px solid rgb(150, 150, 150);
+    width: 20rem;
+    height: 2rem;
+}
+
+
+div#direito
+{
+    margin-left: 5rem;
+}
+
+textarea
+{
+    width: 30rem;
+}
+
+.grupos
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+@media(max-width:1250px){
+    div#tituloduvidas
+    {
+        margin: 0rem;
+        align-self: center;
+    }
+
+    div#tituloemail
+    {
+        margin: 0rem;
+        align-self: center;
+    }
+
+    div#duvidas
+    {
+        width: 26rem;
+        flex-direction: column;
+    }
+
+    div#duvidasgeral
+    {
+        align-items: center;
+    }
+
+    .caixasduvidas
+    {
+        margin-bottom: 5rem;
+    }
+}
+
+@media(max-width:1020px)
+{
+    div#dados
+    {
+        flex-direction: column;
+    }
+
+    div#direito
+    {
+        margin-left: 0rem;
+    }
+
+    div#doislados
+    {
+        flex-direction: column;
+    }
+
+    div#duvidas
+    {
+        width: auto;
+    }
+
+   
+}
+
+@media(max-width:620px)
+{
+    textarea
+    {
+        width: 20rem;
+    }
+
+    div#duvidas
+    {
+        margin-left: auto;
+    }
+
+    
+}
 
 /*Main*/
 
-main
-{
-    background-color: green;
-    height: 1000px;
-}
+
 
 
 /*Footer*/
