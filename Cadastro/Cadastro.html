@@ -23,7 +23,178 @@
     <!--Header-->
 
     <main>
-        Oi
+
+        <div id="cima">
+
+            <div id="cimaesquerda">
+                
+                <div class="margemtop">
+                    <div><label for="email" class="caracteristicaslabel">EMAIL</label></div>
+                    <div><input type="email" name="email" id="email" class="caracteristicasinput"></div>
+                </div>
+
+                <div class="margemtop2">
+                    <div><label for="repetiremail" class="caracteristicaslabel">REPETIR EMAIL</label></div>
+                    <div><input type="email" name="repetiremail" id="repetiremail" class="caracteristicasinput"></div>
+                </div>
+
+            </div>
+
+            <div id="cimadireita">
+
+                <div class="margemdivs margemtop">
+                    <div><label for="senha" class="caracteristicaslabel">SENHA</label></div>
+                    <div><input type="password" name="senha" id="senha" class="caracteristicasinput"></div>
+                </div>
+
+
+                <div class="margemdivs margemtop2">
+                    <div><label for="email" class="caracteristicaslabel">REPETIR SENHA</label></div>
+                    <div><input type="password" name="repetirsenha" id="repetirsenha" class="caracteristicasinput"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="baixo">
+
+            <div id="baixoduas" class="margemtop">
+
+                <div id="baixoesquerda">
+                    <div><h2 class="titulodados">DADOS PESSOAIS</h2></div>
+                    <div>
+                        <div><label for="nome" class="caracteristicaslabel">NOME</label></div>
+                        <div><input type="text" name="nome" id="nome" class="caracteristicasinput"></div>
+                    </div>
+
+                    <div class="margemtop2">
+                        <div><label for="sobrenome" class="caracteristicaslabel">SOBRENOME</label></div>
+                        <div><input type="text" name="sobrenome" id="sobrenome" class="caracteristicasinput"></div>
+                    </div>
+
+                    <div class="margemtop2">
+                        <div><label for="sexo" class="caracteristicaslabel">SEXO</label></div>
+                        <div>
+                            <select name="sexo" id="sexo" class="caracteristicasinput">
+                                <option value="">Selecione o sexo</option>
+                                <option value="M">Masculino</option>
+                                <option value="F">Feminino</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="margemtop2">
+                        <div><label for="cpf" class="caracteristicaslabel">CPF</label></div>
+                        <div><input type="text" name="cpf" id="cpf" class="caracteristicasinput"></div>
+                    </div>
+
+                    <div class="margemtop2">
+                        <div><label for="telefone" class="caracteristicaslabel">TELEFONE</label></div>
+                        <div><input type="text" name="telefone" id="telefone" class="caracteristicasinput"></div>
+                    </div>
+
+                    <div class="margemtop2">
+                        <div><label for="celular" class="caracteristicaslabel">CELULAR</label></div>
+                        <div><input type="text" name="celular" id="celular" class="caracteristicasinput"></div>
+                    </div>
+
+                    <div class="margemtop2">
+                        <div><label for="nascimento" class="caracteristicaslabel">DATA DE NASCIMENTO</label></div>
+                        <div><input type="date" name="nascimento" id="nascimento" class="caracteristicasinput"></div>
+                    </div>
+
+                </div>
+
+
+                <div id="baixodireita" >
+                    <div><h2 class="titulodados">ENDEREÇO</h2></div>
+                    <div>
+                        <div><label for="cep" class="caracteristicaslabel">CEP</label></div>
+                        <div><input type="text" name="cep" id="cep" class="caracteristicasinput"></div>
+                    </div>
+
+                    <div class="margemtop2">
+                        <div><label for="rua" class="caracteristicaslabel">RUA</label></div>
+                        <div><input type="text" name="rua" id="rua" class="caracteristicasinput"></div>
+                    </div>
+
+                    <div class="margemtop2">
+                        <div><label for="numero" class="caracteristicaslabel">NÚMERO</label></div>
+                        <div><input type="number" name="numero" id="numero" class="caracteristicasinput"></div>
+                    </div>
+
+                    <div style="display: flex; flex-direction: row;">
+                        <div><input type="checkbox" name="numero" id="numero"></div>
+                        <div><label for="numero" style="font-size: .7rem;">SEM NÚMERO</label></div>
+                    </div>
+
+                    <div class="margemtop2">
+                        <div><label for="complemento" class="caracteristicaslabel">COMPLEMENTO</label></div>
+                        <div><input type="text" name="complemento" id="complemento" class="caracteristicasinput"></div>
+                    </div>
+
+                    <div class="margemtop2">
+                        <div><label for="referencia" class="caracteristicaslabel">REFERÊNCIA</label></div>
+                        <div><input type="text" name="referencia" id="referencia" class="caracteristicasinput"></div>
+                    </div>
+
+                    <div class="margemtop2">
+                        <div><label for="bairro" class="caracteristicaslabel">BAIRRO</label></div>
+                        <div><input type="text" name="bairro" id="bairro" class="caracteristicasinput"></div>
+                    </div>
+
+                    <div class="margemtop2">
+                        <div><label for="estadolabel" class="caracteristicaslabel">ESTADO</label></div>
+                        <div>
+                            <select name="estado" id="estado" class="caracteristicasinput">
+                            <option value="">Selecione o estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>    
+
+            <div id="botaocadastrar">
+
+                <div>
+                    <button class="botaoacrescimo" style="box-shadow: 0px 0px 5px rgb(100, 100, 100);">Cadastrar</button>
+                </div>
+
+            </div>
+
+        </div>
+
     </main>
 
     <footer>

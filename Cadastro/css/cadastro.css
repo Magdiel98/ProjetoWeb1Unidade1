@@ -90,16 +90,125 @@ div#home
 /*Header*/
 
 
-/*Main*/
 
 
 /*Main*/
-
 main
 {
-    background-color: green;
-    height: 1000px;
+    background-color: white;
+    height: auto;
+    margin-bottom: 5rem;
 }
+
+div#cima
+{
+    display: flex;
+    flex: row;
+    justify-content: center;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    padding-bottom: 3rem;
+}
+
+.margemdivs
+{
+    margin-left: 20rem;
+}
+
+
+.margemtop
+{
+    margin-top: 5rem;
+}
+
+.margemtop2
+{
+    margin-top: 2rem;
+}
+
+.caracteristicasinput
+{
+    border: 1px solid rgb(200, 200, 200);
+    width: 22rem;
+    height: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0px 2px 2px rgb(150, 150, 150);
+}
+
+.caracteristicaslabel
+{
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+
+div#baixo
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#baixoduas
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+div#botaocadastrar
+{
+    align-self: center;
+    margin-top: 5rem;
+    
+}
+
+div#baixodireita
+{
+    margin-left: 30rem;
+}
+
+.titulodados
+{
+    font-size: 1rem;
+}
+
+
+@media(max-width: 1070px)
+{
+    div#cima
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: auto;
+    }   
+
+    .margemdivs
+    {
+        margin-left: 0rem;
+    }
+}
+
+@media(max-width: 1280px)
+{
+    div#baixoduas
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div#baixodireita
+    {
+        margin-left: 0rem;
+        margin-top: 3rem;
+    }
+}
+
+/*Main*/
+
+
+
 
 
 /*Footer*/
