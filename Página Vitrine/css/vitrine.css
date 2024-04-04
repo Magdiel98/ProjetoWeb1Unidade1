@@ -236,15 +236,153 @@ div#lista
 
 
 /*Main*/
+main
+{
+    background-color: white;
+    height: auto;
+    margin-bottom: 5rem;
+}
 
+div#categoria
+{
+    background-color: rgb(150, 150, 150);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.compartimentosvitrine
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.fotosvitrine
+{
+    border: 1px solid rgb(100, 100, 100);
+    width: 21rem;
+    height: 25rem;
+    margin-top: 1rem;
+    margin-left: 0.50rem;
+    margin-right: 0.50rem;
+    background-image: url(../img/modelo.jpg);
+    background-size: cover;
+}
+
+.fotosvitrine:hover
+{
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
+    width: 21.5rem;
+    height: 25.5rem;
+    transition: 0.5s;
+}
+
+div#vitrine
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quatro
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.margemparagrafo
+{
+    margin-left: 0.50rem;
+}
+
+@media(max-width:1450px)
+{
+    .fotosvitrine
+    {
+        width: 19rem;
+        height: 23rem;
+    }  
+
+    .fotosvitrine:hover
+    {
+        width: 19.5rem;
+        height: 23.5rem;
+    }
+
+}
+
+@media(max-width:1320px)
+{
+    .fotosvitrine
+    {
+        width: 16rem;
+        height: 20rem;
+    }   
+
+    .fotosvitrine:hover
+    {
+        width: 16.5rem;
+        height: 20.5rem;
+    }
+}
+
+@media(max-width:1150px)
+{
+    .quatro
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotosvitrine
+    {
+        width: 21rem;
+        height: 25rem;
+    }   
+
+    .fotosvitrine:hover
+    {
+        width: 21.5rem;
+        height: 25.5rem;
+    }
+
+}
+
+
+@media(max-width:780px)
+{
+    .fotosvitrine
+    {
+        width: 13rem;
+        height: 17rem;
+    }  
+
+    .fotosvitrine:hover
+    {
+        width: 13.5rem;
+        height: 17.5rem;
+    }
+}
+
+/*
+div#img
+{
+    display: flex;
+    background-image: url(../img/jeans.jpg); 
+    background-size: cover;
+    width: 20rem;
+    height: 15rem;    
+}
+*/
+
+
+/*Tamanho das divs dos produtos width: 347.8px heigth: 589.89px*/
+/*Quando chegar em 1020px*/
 
 /*Main*/
 
-main
-{
-    background-color: green;
-    height: 1000px;
-}
+
 
 
 /*Footer*/
