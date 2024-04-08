@@ -28,6 +28,22 @@ header
 
 }
 
+
+a#nomeloja
+{
+    text-decoration: none;
+    color: black;
+}
+
+a#nomeloja:hover
+{
+    box-shadow: none;
+    transition: all 0.2s;
+    cursor:pointer;
+    border-radius: none;
+    font-weight: none;
+}
+
 h1#primeira
 {
     margin-right: 6rem;
@@ -433,6 +449,17 @@ div#politicapagamento
     flex-direction: row;
 }
 
+.link
+{
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover
+{
+    font-weight: none;
+}
+
 @media(max-width: 1238px)
 {
     
@@ -561,6 +588,8 @@ div#politicapagamento
         margin-right: 0.6rem;
     }
 }
+
+
 
 /*Segunda div do footer*/
 

@@ -27,7 +27,17 @@ header
 
 }
 
+a#nomeloja
+{
+    text-decoration: none;
+    color: black;
+}
 
+.link
+{
+    text-decoration: none;
+    color: black;  
+}
 
 h1#primeira
 {
@@ -237,14 +247,13 @@ div#lista
 /*Header*/
 
 
-
-
 /*Main*/
-
 main
 {
     background-color: white;
     height: auto;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 5rem;
 }
 
@@ -258,46 +267,21 @@ main
 .fotosvitrine
 {
     border: 1px solid rgb(100, 100, 100);
-    width: 22rem;
-    height: 30rem;
+    width: 14rem;
+    height: 18rem;
     margin-top: 1rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.50rem;
+    margin-right: 0.50rem;
+    background-image: url(../img/roupas.jpg);
     background-size: cover;
-}
-
-.fotojeans
-{
-    background-image: url(../img/jeans.jpg);
-}
-
-.fotoacessorios
-{
-    background-image: url(../img/acessorios.jpg);
-}
-
-.fotoroupas
-{
-    background-image: url(../img/roupas.jpg); 
-}
-
-.fotopraia
-{
-    background-image: url(../img/modapraia.jpg); 
-}
-
-.fotofitness
-{
-    background-image: url(../img/fitness.jpg); 
 }
 
 .fotosvitrine:hover
 {
     box-shadow: 0px 0px 5px rgb(100, 100, 100);
-    width: 22.2rem;
-    height: 30.2rem;
+    width: 14.5rem;
+    height: 18.5rem;
     transition: 0.5s;
-    cursor: pointer;
 }
 
 
@@ -305,7 +289,7 @@ main
 {
     display: flex;
     flex-direction: row;
-    margin-left: 2rem;
+    margin-left: 2.4rem;
 }
 
 .margemparagrafo
@@ -313,240 +297,296 @@ main
     margin-left: 0.50rem;
 }
 
-div#imagemcabecalho
-{
-    border: 1px solid rgb(100, 100, 100);
-    height: 20rem;
-    border-left: none;
-    border-right: none;
-    background-image: url(../img/modelo2.jpg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0px 2px 5px rgb(100, 100, 100);
-    background-attachment: fixed;
-
-}
-
-div#produtos
+div#esquerda
 {
     display: flex;
-    margin-top: 5rem;
-    align-items: center;
 }
 
-div#terceira
+div#fotoproduto
+{
+    border: 1px solid rgb(100, 100, 100);
+    width: 28rem;
+    height: 40rem;
+    margin-top: 1rem;
+    margin-left: 20rem;
+    margin-right: 0.50rem;
+    background-image: url(../img/roupas.jpg);
+    background-size: cover;
+}
+
+
+div#cima
 {
     display: flex;
     flex-direction: row;
-    margin-left: 2.5rem;
+    margin-top: 3rem;
 }
 
-.terceiro
+div#direita
 {
-    border: 1px solid rgb(100, 100, 100);
-    width: 45.5rem;
-    height: 53.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
     margin-top: 1rem;
-    
-    background-size: cover;
 }
 
-.fotoesquerda
+
+div#baixo
 {
-    background-image: url(../img/modelo.jpg);
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
 }
 
-.fotodireita
+div#outrosprodutos
 {
-    background-image: url(../img/modelo3.jpg);
+    align-self: center;
 }
 
-.terceiro:hover
+p#nomeproduto
 {
-    width: 46rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+p#preco
+{
+    margin-top: .5rem;
+    font-size: .98rem;
+}
+
+p#titulodescricao
+{
+    margin-top: 5rem;
+    font-size: 0.88rem;
+}
+
+p#descricao
+{
+    font-size: 0.87rem; 
+    width: 15rem; 
+}
+
+p#avaliacao
+{
+    margin-top: 1.5rem;
+}
+
+button#botaotabela
+{
+    margin-top: 1rem;
+    background-color: rgb(220, 220, 220);
+    width: 8rem;
+    height: 1.5rem;
+    font-size: .8rem;
+    font-weight: bold;
+    border-radius: .2rem;
+    border: none;
+    box-shadow: 0px 0px 3px rgb(100, 100, 100);
+}
+
+button#botaocomprar
+{
+    background-color: rgb(220, 220, 220);
+    border-radius: .2rem;
+    border: none;
     box-shadow: 0px 0px 5px rgb(100, 100, 100);
-    transition: 0.5s;
-    cursor: pointer;
+    height: 1.6rem;
+    margin-top: 10rem;
+    font-size: .9rem;
 }
 
-@media(max-width:1520px)
+p#estrela
+{
+    font-size: 2rem;
+}
+
+@media(max-width: 1500px)
 {
     .quatro
     {
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-    }
-
-    .fotosvitrine
-    {
-        width: 20rem;
-        height: 28rem;
-    }
-
-    .fotosvitrine:hover
-    {
-        width: 20.5rem;
-        height: 28.5rem;
-    }
-
-
-    div#produtos
-    {
-        margin-left: 0rem;
-    }
-
-
-    .terceiro
-    {
-        width: 41.5rem;
-        height: 49.5rem;
-    }
-
-    .terceiro:hover
-    {
-        width: 42rem;
-    }
-
-    div#terceira
-    {
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
     }
+
+    .fotosvitrine
+    {
+        width: 22rem;
+        height: 26rem;
+        margin-top: 1rem;
+        margin-left: 0.50rem;
+        margin-right: 0.50rem;
+    }
+
+    .fotosvitrine:hover
+    {
+        box-shadow: 0px 0px 5px rgb(100, 100, 100);
+        width: 22.5rem;
+        height: 26.5rem;
+        transition: 0.5s;
+    }
 }
 
-@media(max-width:1380px)
+@media(max-width: 1230px)
+{
+    div#cima
+    {
+        flex-direction: column;
+        
+    }
+
+    div#direita
+    {
+        margin-left: 15rem;
+    }
+
+    button#botaocomprar
+    {
+        width: 40rem;
+        height: 1.6rem;
+        margin-top: 4rem;
+        font-size: .9rem;
+    }
+
+    p#titulodescricao
+    {
+        margin-top: 3rem;
+    }
+
+    p#descricao
+    {
+        width: 40rem;
+    }
+    
+}
+
+@media(max-width:970px)
+{
+    div#fotoproduto
+    {
+        margin-left: 12rem;
+    }
+
+    div#direita
+    {
+        margin-left: 7rem;
+    }
+
+    button#botaocomprar
+    {
+        width: 30rem;
+        height: 1.6rem;
+        margin-top: 4rem;
+        font-size: .9rem;
+    }
+
+    p#descricao
+    {
+        width: 30rem;
+    }
+
+}
+
+
+
+@media(max-width: 850px)
 {
     .fotosvitrine
     {
         width: 18rem;
-        height: 26rem;
+        height: 22rem;
+        margin-top: 1rem;
+        margin-left: 0.50rem;
+        margin-right: 0.50rem;
     }
 
     .fotosvitrine:hover
     {
+        box-shadow: 0px 0px 5px rgb(100, 100, 100);
         width: 18.5rem;
-        height: 26.5rem;
+        height: 22.5rem;
+        transition: 0.5s;
     }
 
-    .terceiro
-    {
-        width: 37.5rem;
-        height: 45.5rem;
-    }
-
-    .terceiro:hover
-    {
-        width: 48rem;
-    }
 }
 
-@media(max-width:1250px)
+
+@media(max-width:710px)
 {
-    .quatro
+    div#fotoproduto
     {
-        display: flex;
-        flex-direction: column;
+        margin-left: 5rem;
     }
 
-    .fotosvitrine
+    div#direita
     {
-        width: 26rem;
-        height: 34rem;
+        margin-left: 3rem;
     }
 
-    .fotosvitrine:hover
+    button#botaocomprar
     {
-        width: 26rem;
-        height: 34rem;
+        width: 30rem;
+        height: 1.6rem;
+        margin-top: 4rem;
+        font-size: .9rem;
     }
 
-    div#terceira
+    p#descricao
     {
-        flex-direction: column;
-    }
-
-    .terceiro
-    {
-        width: 53rem;
-        height: 61rem;
-    }
-
-    .terceiro:hover
-    {
-        width: 53.5rem;
+        width: 30rem;
     }
 
 }
 
-@media(max-width:910px)
-{
-    .fotosvitrine
-    {
-        width: 18rem;
-        height: 26rem;
-    }
 
-    .fotosvitrine:hover
-    {
-        width: 18.5rem;
-        height: 26.5rem;
-    }
-
-    .terceiro
-    {
-        width: 37rem;
-        height: 45rem;
-    }
-
-    .terceiro:hover
-    {
-        width: 37.5rem;
-    }
-}
-
-@media(max-width:660px)
+@media(max-width: 700px)
 {
     .fotosvitrine
     {
         width: 12rem;
-        height: 20rem;
+        height: 16rem;
+        margin-top: 1rem;
+        margin-left: 0.50rem;
+        margin-right: 0.50rem;
     }
 
     .fotosvitrine:hover
     {
+        box-shadow: 0px 0px 5px rgb(100, 100, 100);
         width: 12.5rem;
-        height: 20.5rem;
+        height: 16.5rem;
+        transition: 0.5s;
     }
 
-    .terceiro
-    {
-        width: 25rem;
-        height: 33rem;
-    }
-
-    .terceiro:hover
-    {
-        width: 25.5rem;
-    }
 }
 
-/*
-    background-position
 
-    top left
-    top center
-    top right 
-    center left 
-    center center
-    center right
-    bottom left 
-    bottom center
-    bottom right
+@media(max-width:600px)
+{
+    div#fotoproduto
+    {
+        margin-left: 1rem;
+    }
 
-*/
+    div#direita
+    {
+        margin-left: 1rem;
+    }
+
+    button#botaocomprar
+    {
+        width: 25rem;
+        height: 1.6rem;
+        margin-top: 4rem;
+        font-size: .9rem;
+    }
+
+    p#descricao
+    {
+        width: 25rem;
+    }
+
+}
 
 /*Main*/
 
@@ -593,11 +633,6 @@ div#footercadastrar
 }
 
 
-.link
-{
-    text-decoration: none;
-    color: black;
-}
 
 div#sociais
 {

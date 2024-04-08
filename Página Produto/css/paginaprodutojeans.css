@@ -27,6 +27,18 @@ header
 
 }
 
+a#nomeloja
+{
+    text-decoration: none;
+    color: black;
+}
+
+.link
+{
+    text-decoration: none;
+    color: black;  
+}
+
 h1#primeira
 {
     margin-right: 9rem;
@@ -260,7 +272,7 @@ main
     margin-top: 1rem;
     margin-left: 0.50rem;
     margin-right: 0.50rem;
-    background-image: url(../img/modelo.jpg);
+    background-image: url(../img/jeans.jpg);
     background-size: cover;
 }
 
@@ -298,7 +310,7 @@ div#fotoproduto
     margin-top: 1rem;
     margin-left: 20rem;
     margin-right: 0.50rem;
-    background-image: url(../img/modelo.jpg);
+    background-image: url(../img/jeans.jpg);
     background-size: cover;
 }
 

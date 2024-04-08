@@ -27,6 +27,12 @@ header
 
 }
 
+a#nomeloja
+{
+    text-decoration: none;
+    color: black;
+}
+
 h1#primeira
 {
     margin-right: 9rem;
@@ -468,6 +474,11 @@ div#footercadastrar
     align-items: center;
 }
 
+.link
+{
+    text-decoration: none;
+    color: black;
+}
 
 
 div#sociais
