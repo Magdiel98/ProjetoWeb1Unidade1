@@ -235,16 +235,286 @@ div#lista
 /*Header*/
 
 
-/*Main*/
 
 
 /*Main*/
 
 main
 {
-    background-color: green;
-    height: 1000px;
+    background-color: white;
+    height: auto;
+    margin-bottom: 5rem;
 }
+
+.compartimentosvitrine
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.fotosvitrine
+{
+    border: 1px solid rgb(100, 100, 100);
+    width: 22rem;
+    height: 30rem;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background-image: url(../img/modelo.jpg);
+    background-size: cover;
+}
+
+.fotosvitrine:hover
+{
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
+    width: 22.2rem;
+    height: 30.2rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.quatro
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+}
+
+.margemparagrafo
+{
+    margin-left: 0.50rem;
+}
+
+div#imagemcabecalho
+{
+    border: 1px solid rgb(100, 100, 100);
+    height: 20rem;
+    border-left: none;
+    border-right: none;
+    background-image: url(../img/modelo2.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 2px 5px rgb(100, 100, 100);
+    background-attachment: fixed;
+
+}
+
+div#produtos
+{
+    display: flex;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+div#terceira
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2.5rem;
+}
+
+.terceiro
+{
+    border: 1px solid rgb(100, 100, 100);
+    width: 45.5rem;
+    height: 53.5rem;
+    margin-top: 1rem;
+    background-image: url(../img/modelo.jpg);
+    background-size: cover;
+}
+
+.terceiro:hover
+{
+    width: 46rem;
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@media(max-width:1520px)
+{
+    .quatro
+    {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .fotosvitrine
+    {
+        width: 20rem;
+        height: 28rem;
+    }
+
+    .fotosvitrine:hover
+    {
+        width: 20.5rem;
+        height: 28.5rem;
+    }
+
+
+    div#produtos
+    {
+        margin-left: 0rem;
+    }
+
+
+    .terceiro
+    {
+        width: 41.5rem;
+        height: 49.5rem;
+    }
+
+    .terceiro:hover
+    {
+        width: 42rem;
+    }
+
+    div#terceira
+    {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:1380px)
+{
+    .fotosvitrine
+    {
+        width: 18rem;
+        height: 26rem;
+    }
+
+    .fotosvitrine:hover
+    {
+        width: 18.5rem;
+        height: 26.5rem;
+    }
+
+    .terceiro
+    {
+        width: 37.5rem;
+        height: 45.5rem;
+    }
+
+    .terceiro:hover
+    {
+        width: 48rem;
+    }
+}
+
+@media(max-width:1250px)
+{
+    .quatro
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotosvitrine
+    {
+        width: 26rem;
+        height: 34rem;
+    }
+
+    .fotosvitrine:hover
+    {
+        width: 26rem;
+        height: 34rem;
+    }
+
+    div#terceira
+    {
+        flex-direction: column;
+    }
+
+    .terceiro
+    {
+        width: 53rem;
+        height: 61rem;
+    }
+
+    .terceiro:hover
+    {
+        width: 53.5rem;
+    }
+
+}
+
+@media(max-width:910px)
+{
+    .fotosvitrine
+    {
+        width: 18rem;
+        height: 26rem;
+    }
+
+    .fotosvitrine:hover
+    {
+        width: 18.5rem;
+        height: 26.5rem;
+    }
+
+    .terceiro
+    {
+        width: 37rem;
+        height: 45rem;
+    }
+
+    .terceiro:hover
+    {
+        width: 37.5rem;
+    }
+}
+
+@media(max-width:660px)
+{
+    .fotosvitrine
+    {
+        width: 12rem;
+        height: 20rem;
+    }
+
+    .fotosvitrine:hover
+    {
+        width: 12.5rem;
+        height: 20.5rem;
+    }
+
+    .terceiro
+    {
+        width: 25rem;
+        height: 33rem;
+    }
+
+    .terceiro:hover
+    {
+        width: 25.5rem;
+    }
+}
+
+/*
+    background-position
+
+    top left
+    top center
+    top right 
+    center left 
+    center center
+    center right
+    bottom left 
+    bottom center
+    bottom right
+
+*/
+
+/*Main*/
+
+
 
 
 /*Footer*/
